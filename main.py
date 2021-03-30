@@ -1,7 +1,7 @@
 import language_processing
 import random
 
-def generate(text):
+def generate(username, text):
     noun_phr, verb, adj = language_processing.tokenize(text) # Converts input text into tokens.
     print(noun_phr, verb, adj)
 
@@ -31,14 +31,10 @@ def generate(text):
     rand_un_adj = random.choice(un_adj)
     rand_un_verb = random.choice(un_verb)
 
-    return headlineGenerator("OBLIVION", randPhrase, rand_un_adj, rand_un_verb)
+    return headlineGenerator(username, randPhrase, rand_un_adj, rand_un_verb)
 
 def headlineGenerator(name, phrase, adjective, verb):
 
     headline = f"BREAKING NEWS: {name.upper()} thinks that {phrase.upper()} {verb.upper()} {adjective.upper()}!"
-    print(headline)
 
-while True:
-    text = input()
-    generate(text)
-
+    return headline
