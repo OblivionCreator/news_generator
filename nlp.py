@@ -45,7 +45,7 @@ def headlineGenerator(name, phrase, adjective, verb='', useverb=True):
 
     c_list = ["thinks that", "said that", "stated that", "strongly believes that", "does not believe that", "made it public that they think that", "determined that", "believes that", "did not understand that"]
 
-    c_ = c_list[random.randint(0, len(c_list))]
+    c_ = random.choice(c_list)
 
     hl_list = [
         f"{name} {c_} {phrase.upper()} {v_.upper()} {adjective.upper()}!",
