@@ -28,9 +28,12 @@ def generate(username, text, useverb=True):
     if len(un_verb) == 0:
         un_verb = ["IS"]
 
-    rand_un_adj = random.choice(un_adj)
-    rand_un_verb = random.choice(un_verb)
+    try:
+        rand_un_adj = random.choice(un_adj)
+    except Exception:
+        return False
 
+        rand_un_verb = random.choice(un_verb)
     return headlineGenerator(username, randPhrase, rand_un_adj, rand_un_verb, useverb)
 
 def headlineGenerator(name, phrase, adjective, verb='', useverb=True):
