@@ -60,14 +60,14 @@ def headlineGenerator(name, phrase, adjective, verb='', useverb=True):
         f"Did you know that {name} believes in {phrase.upper()}?",
         f"The Verge has rated {name} as {v_.upper()} {phrase.upper()} of the year!",
         f"10 Reasons why {name} believes {v_.upper()} {phrase.upper()}",
-        f"Do you know {name}? Then did you know that {name} {c_.upper()} {v_.upper()} {phrase.upper()}"
-        f"The rumour come out: Does {phrase.upper()} {v_.upper()} {adjective.upper()}? {name} thinks so!"
-        f"Is the last {phrase.upper()} you'll ever need?! r/Undertale User {name} said so!"
-        f"{name}'s list of 10 {phrase.upper()}'s that actually work!"
-        f"{name}'s opinion: {phrase.upper()} {v_.upper()} {adjective.upper()}. Do you agree?"
-        f"/r/Undertale Exclusive: {name} was once spotted in {random.randint(2000, 2020)} rambling about {phrase.upper()}"
-        f"Cancel Culture gone too far! Controversy strikes after {name} said: {adjective.upper()} {v_.upper()} {phrase.upper()}"
-        f"Newhome in chaos! {phrase.upper()} is {adjective.upper()} says {name}!"
+        f"Do you know {name}? Then did you know that {name} {c_.upper()} {v_.upper()} {phrase.upper()}",
+        f"The rumour come out: Does {phrase.upper()} {v_.upper()} {adjective.upper()}? {name} thinks so!",
+        f"Is the last {phrase.upper()} you'll ever need?! r/Undertale User {name} said so!",
+        f"{name}'s list of 10 {phrase.upper()}'s that actually work!",
+        f"{name}'s opinion: {phrase.upper()} {v_.upper()} {adjective.upper()}. Do you agree?",
+        f"/r/Undertale Exclusive: {name} was once spotted in {random.randint(2000, 2020)} rambling about {phrase.upper()}",
+        f"Cancel Culture gone too far! Controversy strikes after {name} said: {adjective.upper()} {v_.upper()} {phrase.upper()}",
+        f"Newhome in chaos! {phrase.upper()} is {adjective.upper()} says {name}!",
     ]
 
     headline = random.choice(hl_list)
