@@ -50,7 +50,7 @@ def headlineGenerator(name, phrase, adjective, verb='', useverb=True):
     hl_list = [
         f"{name} {c_} {phrase.upper()} {v_.upper()} {adjective.upper()}!",
         f"You Won't Believe What {name} Has To Say About {phrase.upper()}!",
-        f"{phrase.upper()}{v_.upper()} {adjective.upper()}? {name.upper} Thinks So!",
+        f"{phrase.upper()} {v_.upper()} {adjective.upper()}? {name} Thinks So!",
         f"5 Signs You Might Be Like {name}: Do you think {phrase.upper()} {v_} {adjective.upper}?",
         f"{name} hates this one weird trick! Learn to {v_} {adjective.upper()} Today!",
         f"Did you know that {name} believes in {phrase.upper()}?",
