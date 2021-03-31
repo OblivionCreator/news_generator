@@ -35,7 +35,9 @@ def generate(username, text, useverb=True):
         rand_un_adj = random.choice(un_adj)
     except Exception:
         return False
-        rand_un_verb = random.choice(un_verb)
+
+    rand_un_verb = random.choice(un_verb)
+
     return headlineGenerator(username, randPhrase, rand_un_adj, rand_un_verb, useverb)
 
 def headlineGenerator(name, phrase, adjective, verb='', useverb=True):
@@ -62,7 +64,7 @@ def headlineGenerator(name, phrase, adjective, verb='', useverb=True):
         f"The rumour come out: Does {phrase.upper()} {v_.upper()} {adjective.upper()}? {name} thinks so!"
         f"Is the last {phrase.upper()} you'll ever need?! r/Undertale User {name} said so!"
         f"{name}'s list of 10 {phrase.upper()}'s that actually work!"
-        f"{user}: {phrase.upper()} {adjective.upper()}"
+        f"{name}'s opinion: {phrase.upper()} {v_.upper()} {adjective.upper()}. Do you agree?"
     ]
 
     headline = random.choice(hl_list)
