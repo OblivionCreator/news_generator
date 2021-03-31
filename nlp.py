@@ -6,8 +6,11 @@ def generate(username, text, useverb=True):
     print(noun_phr, verb, adj)
 
 
+    try:
+        randPhrase = random.choice(noun_phr)
+    except IndexError:
+        return False
 
-    randPhrase = random.choice(noun_phr)
     print(randPhrase)
 
     un_adj = []
@@ -32,7 +35,6 @@ def generate(username, text, useverb=True):
         rand_un_adj = random.choice(un_adj)
     except Exception:
         return False
-
         rand_un_verb = random.choice(un_verb)
     return headlineGenerator(username, randPhrase, rand_un_adj, rand_un_verb, useverb)
 
@@ -51,12 +53,16 @@ def headlineGenerator(name, phrase, adjective, verb='', useverb=True):
         f"{name} {c_} {phrase.upper()} {v_.upper()} {adjective.upper()}!",
         f"You Won't Believe What {name} Has To Say About {phrase.upper()}!",
         f"{phrase.upper()} {v_.upper()} {adjective.upper()}? {name} Thinks So!",
-        f"5 Signs You Might Be Like {name}: Do you think {phrase.upper()} {v_} {adjective.upper}?",
+        f"5 Signs You Might Be Like {name}: Do you think {phrase.upper()} {v_} {adjective.upper()}?",
         f"{name} hates this one weird trick! Learn to {v_} {adjective.upper()} Today!",
         f"Did you know that {name} believes in {phrase.upper()}?",
         f"The Verge has rated {name} as {v_.upper()} {phrase.upper()} of the year!",
         f"10 Reasons why {name} believes {v_.upper()} {phrase.upper()}",
-        f"Do you know {name}? Then did you know that {name} {c_} {v_}"
+        f"Do you know {name}? Then did you know that {name} {c_.upper()} {v_.upper()}"
+        f"The rumour come out: Does {phrase.upper()} {v_.upper()} {adjective.upper()}? {name} thinks so!"
+        f"Is the last {phrase.upper()} you'll ever need?! r/Undertale User {name} said so!"
+        f"{name}'s list of 10 {phrase.upper()}'s that actually work!"
+        f"{user}: {phrase.upper()} {adjective.upper()}"
     ]
 
     headline = random.choice(hl_list)
