@@ -65,6 +65,9 @@ def headlineGenerator(name, phrase, adjective, verb='', useverb=True):
         f"Is the last {phrase.upper()} you'll ever need?! r/Undertale User {name} said so!"
         f"{name}'s list of 10 {phrase.upper()}'s that actually work!"
         f"{name}'s opinion: {phrase.upper()} {v_.upper()} {adjective.upper()}. Do you agree?"
+        f"/r/Undertale Exclusive: {name} was once spotted in {random.randint(2000, 2020)} rambling about {phrase.upper()}"
+        f"Cancel Culture gone too far! Controversy strikes after {name} said: {adjective.upper()} {v_.upper()} {phrase.upper()}"
+        f"Newhome in chaos! {phrase.upper()} is {adjective.upper()} says {name}!"
     ]
 
     headline = random.choice(hl_list)
