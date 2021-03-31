@@ -44,6 +44,18 @@ def headlineGenerator(name, phrase, adjective, verb='', useverb=True):
 
     c_ = c_list[random.randint(0, len(c_list))]
 
-    headline = f"BREAKING NEWS: {name.upper()} {c_} {phrase.upper()} {v_.upper()} {adjective.upper()}!"
+    hl_list = [
+        f"{name} {c_} {phrase.upper()} {v_.upper()} {adjective.upper()}!",
+        f"You Won't Believe What {name} Has To Say About {phrase.upper()}!",
+        f"{phrase.upper()}{v_.upper()} {adjective.upper()}? {name.upper} Thinks So!",
+        f"5 Signs You Might Be Like {name}: Do you think {phrase.upper()} {v_} {adjective.upper}?",
+        f"{name} hates this one weird trick! Learn to {v_} {adjective.upper()} Today!",
+        f"Did you know that {name} believes in {phrase.upper()}?",
+        f"The Verge has rated {name} as {v_.upper()} {phrase.upper()} of the year!",
+        f"10 Reasons why {name} believes {v_.upper()} {phrase.upper()}",
+        f"Do you know {name}? Then did you know that {name} {c_} {v_}"
+    ]
+
+    headline = random.choice(hl_list)
 
     return headline
