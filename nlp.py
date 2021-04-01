@@ -88,5 +88,6 @@ def headlineGenerator(name, phrase, adjective, verb='', useverb=True):
     ]
 
     headline = random.choice(hl_list)
+    print("Headline successfully generated! - " + headline)
 
     return headline
